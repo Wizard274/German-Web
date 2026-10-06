@@ -1,28 +1,27 @@
 # Dependencies
 node_modules/
+**/node_modules/
 
-# Build output
-dist/
-build/
-.vite/
-
-# Environment variables & secrets
+# Environment variables
 .env
 .env.local
-.env.production
-.env.development
+.env.development.local
+.env.production.local
+server/.env
 
-# OS & Editor files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+# Build outputs
+dist/
+build/
+**/dist/
 
-# Generated audio cache
+# Generated audio temporary files
 server/generated-audio/*.mp3
 !server/generated-audio/.gitkeep
 
-# Local git tooling
+# Portable tools & workspace cache
 git_bin/
-push_to_github.ps1
-
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
